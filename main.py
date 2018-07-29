@@ -7,11 +7,6 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 
-
-
-
-
-
 def find_possibles_shapes():
     fig, ax = plt.subplots()
     g = grid.Grid(50, 250, 1)
@@ -35,7 +30,7 @@ def find_possibles_shapes():
     diff = max(mif.keys()) - min(mif.keys())
     print(diff)
     print(min(mif.keys()))
-    ax.set_ylim(0, 30)
+    ax.set_ylim(0, 50)
     ax.set_xlim(0, 30)
     g.draw(fig, ax)
     print("hello4")

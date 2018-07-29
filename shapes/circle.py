@@ -1,3 +1,4 @@
+import numpy as np
 from matplotlib import pyplot as plt
 
 from contants import RADIUS
@@ -11,7 +12,7 @@ class Circle(drawable.Drawable):
 
     def draw(self, fig, ax):
         # circle = plt.Circle((self._center.getX(), self._center.getY()), self._radius, color='red')
-        around_circle = plt.Circle((self._center.getX(), self._center.getY()), color=self._center.get_color(), fill=False)
+        around_circle = plt.Circle((self._center.getX(), self._center.getY()), self._radius, color=self._center.get_color(), fill=False)
         self._center.draw(fig, ax)
         # ax.add_artist(circle)
         ax.add_artist(around_circle)
